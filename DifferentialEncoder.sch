@@ -1,0 +1,343 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "ODrive Differential Encoder Adapter"
+Date "2018-08-15"
+Rev "1"
+Comp "Melonwerks"
+Comment1 "Wetmelon"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Interface_UART:MAX3284E U1
+U 1 1 5B74B6DB
+P 4000 3150
+F 0 "U1" H 4250 3400 50  0000 L CNN
+F 1 "MAX3284E" H 4250 2900 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 4000 2450 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX3280E-MAX3284E.pdf" H 3990 3100 50  0001 C CNN
+	1    4000 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR01
+U 1 1 5B74B7B4
+P 4000 2600
+F 0 "#PWR01" H 4000 2450 50  0001 C CNN
+F 1 "+5V" H 4015 2773 50  0000 C CNN
+F 2 "" H 4000 2600 50  0001 C CNN
+F 3 "" H 4000 2600 50  0001 C CNN
+	1    4000 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 2600 4000 2650
+Wire Wire Line
+	4000 2650 4100 2650
+Wire Wire Line
+	4100 2650 4100 2750
+Wire Wire Line
+	4000 2650 4000 2750
+Connection ~ 4000 2650
+$Comp
+L power:GND #PWR02
+U 1 1 5B74B829
+P 4000 3650
+F 0 "#PWR02" H 4000 3400 50  0001 C CNN
+F 1 "GND" H 4005 3477 50  0000 C CNN
+F 2 "" H 4000 3650 50  0001 C CNN
+F 3 "" H 4000 3650 50  0001 C CNN
+	1    4000 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3550 4000 3650
+Wire Wire Line
+	3550 3050 3700 3050
+Text Label 3550 3050 0    50   ~ 0
+A
+Text Label 3550 3250 0    50   ~ 0
+~A
+Wire Wire Line
+	3550 3250 3700 3250
+Wire Wire Line
+	4300 3150 4600 3150
+Text Label 4600 3150 2    50   ~ 0
+A_Out
+$Comp
+L Interface_UART:MAX3284E U2
+U 1 1 5B74B9F2
+P 5450 3150
+F 0 "U2" H 5700 3400 50  0000 L CNN
+F 1 "MAX3284E" H 5700 2900 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 5450 2450 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX3280E-MAX3284E.pdf" H 5440 3100 50  0001 C CNN
+	1    5450 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR05
+U 1 1 5B74B9F9
+P 5450 2600
+F 0 "#PWR05" H 5450 2450 50  0001 C CNN
+F 1 "+5V" H 5465 2773 50  0000 C CNN
+F 2 "" H 5450 2600 50  0001 C CNN
+F 3 "" H 5450 2600 50  0001 C CNN
+	1    5450 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 2600 5450 2650
+Wire Wire Line
+	5450 2650 5550 2650
+Wire Wire Line
+	5550 2650 5550 2750
+Wire Wire Line
+	5450 2650 5450 2750
+Connection ~ 5450 2650
+$Comp
+L power:GND #PWR06
+U 1 1 5B74BA04
+P 5450 3650
+F 0 "#PWR06" H 5450 3400 50  0001 C CNN
+F 1 "GND" H 5455 3477 50  0000 C CNN
+F 2 "" H 5450 3650 50  0001 C CNN
+F 3 "" H 5450 3650 50  0001 C CNN
+	1    5450 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 3550 5450 3650
+Wire Wire Line
+	5000 3050 5150 3050
+Text Label 5000 3050 0    50   ~ 0
+B
+Text Label 5000 3250 0    50   ~ 0
+~B
+Wire Wire Line
+	5000 3250 5150 3250
+Wire Wire Line
+	5750 3150 6050 3150
+Text Label 6050 3150 2    50   ~ 0
+B_Out
+$Comp
+L Interface_UART:MAX3284E U3
+U 1 1 5B74BB93
+P 6800 3150
+F 0 "U3" H 7050 3400 50  0000 L CNN
+F 1 "MAX3284E" H 7050 2900 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 6800 2450 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX3280E-MAX3284E.pdf" H 6790 3100 50  0001 C CNN
+	1    6800 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR07
+U 1 1 5B74BB9A
+P 6800 2600
+F 0 "#PWR07" H 6800 2450 50  0001 C CNN
+F 1 "+5V" H 6815 2773 50  0000 C CNN
+F 2 "" H 6800 2600 50  0001 C CNN
+F 3 "" H 6800 2600 50  0001 C CNN
+	1    6800 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 2600 6800 2650
+Wire Wire Line
+	6800 2650 6900 2650
+Wire Wire Line
+	6900 2650 6900 2750
+Wire Wire Line
+	6800 2650 6800 2750
+Connection ~ 6800 2650
+$Comp
+L power:GND #PWR08
+U 1 1 5B74BBA5
+P 6800 3650
+F 0 "#PWR08" H 6800 3400 50  0001 C CNN
+F 1 "GND" H 6805 3477 50  0000 C CNN
+F 2 "" H 6800 3650 50  0001 C CNN
+F 3 "" H 6800 3650 50  0001 C CNN
+	1    6800 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 3550 6800 3650
+Wire Wire Line
+	6350 3050 6500 3050
+Text Label 6350 3050 0    50   ~ 0
+Z
+Text Label 6350 3250 0    50   ~ 0
+~Z
+Wire Wire Line
+	6350 3250 6500 3250
+Wire Wire Line
+	7100 3150 7400 3150
+Text Label 7400 3150 2    50   ~ 0
+Z_Out
+$Comp
+L Device:C C3
+U 1 1 5B74C727
+P 5650 4600
+F 0 "C3" H 5700 4700 50  0000 L CNN
+F 1 "100nF" H 5800 4600 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5688 4450 50  0001 C CNN
+F 3 "~" H 5650 4600 50  0001 C CNN
+	1    5650 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR03
+U 1 1 5B74C789
+P 5050 4300
+F 0 "#PWR03" H 5050 4150 50  0001 C CNN
+F 1 "+5V" H 5065 4473 50  0000 C CNN
+F 2 "" H 5050 4300 50  0001 C CNN
+F 3 "" H 5050 4300 50  0001 C CNN
+	1    5050 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 4300 5050 4350
+Wire Wire Line
+	5050 4350 5350 4350
+Wire Wire Line
+	5350 4350 5350 4450
+Connection ~ 5050 4350
+Wire Wire Line
+	5050 4350 5050 4450
+Wire Wire Line
+	5650 4350 5650 4450
+Connection ~ 5350 4350
+$Comp
+L power:GND #PWR04
+U 1 1 5B74D94F
+P 5050 4900
+F 0 "#PWR04" H 5050 4650 50  0001 C CNN
+F 1 "GND" H 5055 4727 50  0000 C CNN
+F 2 "" H 5050 4900 50  0001 C CNN
+F 3 "" H 5050 4900 50  0001 C CNN
+	1    5050 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 4900 5050 4850
+Wire Wire Line
+	5650 4750 5650 4850
+Connection ~ 5050 4850
+Wire Wire Line
+	5050 4850 5050 4750
+Wire Wire Line
+	5350 4850 5350 4750
+Connection ~ 5350 4850
+Wire Wire Line
+	5350 4850 5050 4850
+$Comp
+L Device:C C1
+U 1 1 5B74FACF
+P 5050 4600
+F 0 "C1" H 5200 4700 50  0000 R CNN
+F 1 "100nF" H 5165 4555 50  0001 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5088 4450 50  0001 C CNN
+F 3 "~" H 5050 4600 50  0001 C CNN
+	1    5050 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5B74FB1F
+P 5350 4600
+F 0 "C2" H 5400 4700 50  0000 L CNN
+F 1 "100nF" H 5465 4555 50  0001 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5388 4450 50  0001 C CNN
+F 3 "~" H 5350 4600 50  0001 C CNN
+	1    5350 4600
+	1    0    0    -1  
+$EndComp
+Text Notes 5150 4300 0    50   ~ 0
+100nF Caps for Decoupling
+Text Label 4450 1650 0    50   ~ 0
+A
+Text Label 5350 1650 2    50   ~ 0
+~A
+Wire Wire Line
+	5350 1650 5150 1650
+Wire Wire Line
+	4450 1650 4650 1650
+Text Label 4450 1750 0    50   ~ 0
+B
+Text Label 4450 1850 0    50   ~ 0
+Z
+Text Label 5350 1750 2    50   ~ 0
+~B
+Text Label 5350 1850 2    50   ~ 0
+~Z
+Text Label 5350 1950 2    50   ~ 0
+GND
+Wire Wire Line
+	4450 1750 4650 1750
+Wire Wire Line
+	4450 1850 4650 1850
+Wire Wire Line
+	4450 1950 4650 1950
+Wire Wire Line
+	5150 1750 5350 1750
+Wire Wire Line
+	5150 1850 5350 1850
+Wire Wire Line
+	5150 1950 5350 1950
+$Comp
+L Connector_Generic:Conn_01x05 J2
+U 1 1 5B752F6A
+P 6100 1800
+F 0 "J2" H 6179 1842 50  0000 L CNN
+F 1 "ODrive Connector" H 6179 1751 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 6100 1800 50  0001 C CNN
+F 3 "~" H 6100 1800 50  0001 C CNN
+	1    6100 1800
+	1    0    0    -1  
+$EndComp
+Text Label 5700 1600 0    50   ~ 0
++5V
+Wire Wire Line
+	5700 1600 5900 1600
+Text Label 5700 1700 0    50   ~ 0
+A_Out
+Wire Wire Line
+	5700 1700 5900 1700
+Text Label 5700 1800 0    50   ~ 0
+B_Out
+Text Label 5700 1900 0    50   ~ 0
+Z_Out
+Wire Wire Line
+	5700 1800 5900 1800
+Wire Wire Line
+	5700 1900 5900 1900
+Text Label 5700 2000 0    50   ~ 0
+GND
+Wire Wire Line
+	5700 2000 5900 2000
+Wire Wire Line
+	5350 4350 5650 4350
+Wire Wire Line
+	5350 4850 5650 4850
+$Comp
+L Connector_Generic:Conn_02x04_Odd_Even J1
+U 1 1 5B75D1D9
+P 4850 1750
+F 0 "J1" H 4900 2067 50  0000 C CNN
+F 1 "Conn_02x04_Odd_Even" H 4900 1976 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 4850 1750 50  0001 C CNN
+F 3 "~" H 4850 1750 50  0001 C CNN
+	1    4850 1750
+	1    0    0    -1  
+$EndComp
+Text Label 4450 1950 0    50   ~ 0
++5V
+$EndSCHEMATC
