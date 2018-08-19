@@ -2,7 +2,7 @@
 
 This project is dedicated to a simple adapter board designed to convert 5V line driver encoders to single-ended encoders for use with the ODrive 3.x servo driver.
 
-[Order Boards Here](https://oshpark.com/projects/ZQ1PK2io)
+[Order Boards Here](https://oshpark.com/shared_projects/w5KVKWCw)
 
 [BOM on Octopart available here](https://octopart.com/bom-tool/bUMGyQwH)
 
